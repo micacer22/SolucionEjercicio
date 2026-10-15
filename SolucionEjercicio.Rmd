@@ -1,0 +1,12 @@
+---
+title: "SolucionEjercicio2_AED"
+author: "Miriam Caballero Cerveró"
+date: "2026-10-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+
+```
+
