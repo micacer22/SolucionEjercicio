@@ -59,3 +59,17 @@ rownames(Animals2)
 colnames(Animals2) #[1] "body"  "brain"
 ```
 
+# Cuarto apartado
+
+```{r}
+# d) Usa la función intersect y almacena en la variable commonAnimals los aminales que aparezcan en ambos conjuntos
+commonAnimals <- intersect(
+  rownames(mammals),
+  rownames(Animals2)
+)
+
+# Imprimimos los animales que aparecen en ambos y la cantidad
+commonAnimals
+length(commonAnimals) #[1] 58
+```
+
