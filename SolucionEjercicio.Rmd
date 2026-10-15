@@ -5,6 +5,8 @@ date: "2026-10-15"
 output: html_document
 ---
 
+# Primer apartado
+
 ```{r setup, include=FALSE}
 # a) Mira la las características de ambos conjuntos usando la ayuda.
 library(MASS)
@@ -18,6 +20,23 @@ data("Animals2", package = "robustbase")
 
 # Ambos conjuntos contienen información sobre el peso corporal 
 # y el peso cerebral de mamíferos.
+
+```
+
+# Segundo apartado
+
+```{r}
+# b) Usa las funciones dim, head, tail, str para una primera visión de los conjuntos de datos.
+
+dim(mammals)
+head(mammals)
+tail(mammals)
+str(mammals)
+
+dim(Animals2)
+head(Animals2)
+tail(Animals2)
+str(Animals2)
 
 ```
 
