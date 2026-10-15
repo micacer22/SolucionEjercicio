@@ -6,7 +6,18 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
+# a) Mira la las características de ambos conjuntos usando la ayuda.
+library(MASS)
+library(robustbase)
 
+data("mammals", package = "MASS")
+data("Animals2", package = "robustbase")
+
+?mammals #Brain and Body Weights for 62 Species of Land Mammals
+?Animals2 #Brain and Body Weights for 65 Species of Land Animals
+
+# Ambos conjuntos contienen información sobre el peso corporal 
+# y el peso cerebral de mamíferos.
 
 ```
 
