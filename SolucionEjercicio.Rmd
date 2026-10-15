@@ -98,3 +98,23 @@ length(soloAnimals2) #[1] 7
 length(soloMammals) + length(soloAnimals2) #[1] 11
 ```
 
+# Sexto apartado
+
+```{r}
+# f) Determina las diferencia entre los animales que no aparecen en ambos conjuntos.
+
+# Animales exclusivos de mammals
+mammals[soloMammals, , drop = FALSE]
+
+# Animales exclusivos de Animals2
+Animals2[soloAnimals2, , drop = FALSE]
+
+# Comparar las variables disponibles
+colnames(mammals) #[1] "body"  "brain"
+colnames(Animals2) #[1] "body"  "brain"
+
+# Comparar valores de peso corporal y cerebral
+summary(mammals[soloMammals, , drop = FALSE])
+summary(Animals2[soloAnimals2, , drop = FALSE])
+```
+
