@@ -73,3 +73,28 @@ commonAnimals
 length(commonAnimals) #[1] 58
 ```
 
+# Quinto apartado
+
+```{r}
+# e) Usa setdiff para averiguar qué animales no están en ambos conjuntos. ¿Cuántos son ?. ¿Qué tipo de animales son?
+
+soloMammals <- setdiff(
+  rownames(mammals),
+  rownames(Animals2)
+)
+
+soloAnimals2 <- setdiff(
+  rownames(Animals2),
+  rownames(mammals)
+)
+
+soloMammals #[1] "Arctic fox"             "Arctic ground squirrel" "Patas monkey"           "Mole rat" 
+soloAnimals2 #[1] "Dipliodocus"           "Potar monkey"          "Triceratops"           "Brachiosaurus"         "Mole"                #[6] "Artic fox"             "Artic ground squirrel"
+
+length(soloMammals) #[1] 4
+length(soloAnimals2) #[1] 7
+
+# Número total de nombres no compartidos
+length(soloMammals) + length(soloAnimals2) #[1] 11
+```
+
