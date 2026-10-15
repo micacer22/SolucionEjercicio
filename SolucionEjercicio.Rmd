@@ -37,6 +37,5 @@ dim(Animals2)
 head(Animals2)
 tail(Animals2)
 str(Animals2)
-
 ```
 
