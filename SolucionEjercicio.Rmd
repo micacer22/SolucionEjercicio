@@ -53,9 +53,9 @@ str(Animals2)
 # c) Muestra los nombres de las filas y las columnas (rownames, colnames)
 
 rownames(mammals)
-colnames(mammals)
+colnames(mammals) #[1] "body"  "brain"
 
-rownames(Animals2)
-colnames(Animals2)
+rownames(Animals2) 
+colnames(Animals2) #[1] "body"  "brain"
 ```
 
