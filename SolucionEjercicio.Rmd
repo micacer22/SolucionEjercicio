@@ -28,14 +28,34 @@ data("Animals2", package = "robustbase")
 ```{r}
 # b) Usa las funciones dim, head, tail, str para una primera visión de los conjuntos de datos.
 
-dim(mammals)
+dim(mammals) #[1] 62  2
 head(mammals)
 tail(mammals)
 str(mammals)
 
-dim(Animals2)
+#'data.frame':	62 obs. of  2 variables:
+# $ body : num  3.38 0.48 1.35 465 36.33 ...
+# $ brain: num  44.5 15.5 8.1 423 119.5 ...
+
+dim(Animals2) # [1] 65  2
 head(Animals2)
 tail(Animals2)
 str(Animals2)
+
+# 'data.frame':	65 obs. of  2 variables:
+# $ body : num  1.35 465 36.33 27.66 1.04 ...
+# $ brain: num  8.1 423 119.5 115 5.5 ...
+```
+
+# Tercer apartado
+
+```{r}
+# c) Muestra los nombres de las filas y las columnas (rownames, colnames)
+
+rownames(mammals)
+colnames(mammals)
+
+rownames(Animals2)
+colnames(Animals2)
 ```
 
